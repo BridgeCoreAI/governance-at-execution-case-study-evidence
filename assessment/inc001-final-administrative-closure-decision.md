@@ -5,16 +5,17 @@
 **Architecture:** Governance at Execution™ v4.0 (frozen September 6, 2026)  
 **Incident:** Claude Opus 4.7 cybersecurity evaluation incident  
 **Date:** October 27, 2026  
-**Version:** Closure decision draft v1.0  
-**Status:** PENDING RESEARCHER APPROVAL; NOT COMMITTED  
-**Scope:** Bounded H1–H5-D research phase only  
-**Public release:** NOT AUTHORIZED
+**Decision date:** November 16, 2026  
+**Version:** Closure decision v1.1  
+**Status:** CONDITIONAL ADMINISTRATIVE CLOSURE APPROVED  
+**Scope:** Bounded H1 through H5 D research phase only  
+**Public release:** CURRENT RESEARCH ARTIFACTS AUTHORIZED FOR PUBLIC ACCESS AS RESEARCH IN PROGRESS
 
-## 1. Proposed decision
+## 1. Approved decision
 
-**CONDITIONAL ADMINISTRATIVE CLOSURE RECOMMENDED.** The H1–H5-D work is documented and the consolidated research report has been approved and privately archived. Closure may designate the defined research phase complete **with residual exceptions retained**. It does not represent control certification, full forensic closure, architecture validation in production, or publication approval.
+**CONDITIONAL ADMINISTRATIVE CLOSURE APPROVED.** The H1 through H5 D work is documented and the consolidated research report has been approved and archived. Closure designates the defined research phase complete **with residual exceptions retained**. It does not represent control certification, full forensic closure, architecture validation in production, operational effectiveness, or a final production validated release.
 
-This document is a proposed decision, **not** a signed or final closure declaration. The decision takes effect only after Grace Adjeli explicitly approves it.
+This document records the research owner's selection of the recommended conditional closure approach on November 16, 2026. Public release authorization is recorded separately in section 9.
 
 ## 2. Evidence reviewed
 
@@ -41,8 +42,8 @@ The review confirms the contents and conclusions of approved records; it does no
 3. **Frozen conceptual architecture mapping:** Completed from visually inspected copies with binary-provenance limitation.
 4. **Synthetic experimental program:** H1–H4 documented; H5-B and H5-C diagnostics complete.
 5. **Evidence adjudication:** Approved H5-D determination states insufficient evidence to establish frozen-architecture implementation effectiveness for all four incident-aligned scenarios.
-6. **Consolidated research report:** Approved and privately archived.
-7. **Administrative closure decision:** Proposed here, pending researcher approval.
+6. **Consolidated research report:** Approved and archived. The artifact is now publicly accessible under the research in progress authorization recorded in section 9.
+7. **Administrative closure decision:** Conditional administrative closure approved on November 16, 2026.
 
 ## 4. Findings to retain at closure
 
@@ -76,19 +77,38 @@ For **AT-001, AT-002, AT-003 and AT-004**, the final evidence determination rema
 
 ## 7. Repository and intellectual property safeguards
 
-- Retain GitHub repository **private**.
+- Keep the GitHub repository public under the bounded research authorization recorded in section 9.
 - Leave `architecture/gae-v4.0-frozen-baseline.png` and `architecture/BASELINE.md` unchanged.
-- Preserve approved research artifacts and historic status statements without retroactive alteration.
-- Do not make files public, publish case-study claims, or implement remediations without separate explicit authorization.
-- Record final approval separately from the research findings, with a verifiable commit only after approval.
+- Preserve approved research artifacts and historic status statements without retroactive alteration. Current visibility and release status are governed by the repository README and this decision record.
+- Do not interpret public access as authorization for production deployment claims, client outcome claims, incident prevention claims, or operational effectiveness claims.
+- Record approvals separately from the research findings, with a verifiable commit only after approval.
 
-## 8. Proposed final decision text
+## 8. Final decision text
 
-> As research lead for BridgeCore AI LLC, I approve the **conditional administrative closure** of INC-001, covering the bounded H1–H5-D Governance at Execution™ research phase. The research artifacts and evidence-sufficiency assessment are accepted as complete **within the documented study scope**. The nine recorded residual exceptions remain open and are not deemed remediated. No operational effectiveness certification, prevention claim, formal PASS/PARTIAL/FAIL rating, or public-release authorization is granted by this decision.
+> As research lead for BridgeCore AI LLC, I approve the **conditional administrative closure** of INC-001, covering the bounded H1 through H5 D Governance at Execution™ research phase. The research artifacts and evidence sufficiency assessment are accepted as complete **within the documented study scope**. The nine recorded residual exceptions remain open and are not deemed remediated. No operational effectiveness certification, prevention claim, or formal PASS, PARTIAL, or FAIL rating is granted by this decision. Public release authorization is separate from this closure decision and is recorded in section 9.
 
-**Decision:** PENDING RESEARCHER APPROVAL  
-**Approval date:** Not assigned  
-**Repository archival:** Not authorized until decision approved
+**Decision:** CONDITIONAL ADMINISTRATIVE CLOSURE APPROVED  
+**Approval date:** November 16, 2026  
+**Repository archival:** Current research artifacts retained in the public repository as research in progress
+
+## 9. Public release authorization
+
+Public access to the current Governance at Execution research repository is authorized as research in progress, with its documented limitations and residual exceptions. This authorization covers public access to the repository's current research artifacts. It does not constitute approval of a final production validated release or a claim of operational effectiveness.
+
+No client outcome, production deployment, incident prevention, or regulatory certification claim is authorized by this statement.
+
+**Authorization date:** November 16, 2026  
+**Decision basis:** The research owner accepted the recommended current research artifact option during the project working session.
+
+## 10. Reopening conditions
+
+Administrative closure does not waive any residual exception. The relevant assessment must be reopened, or a separately governed post baseline initiative must be established, when any of the following occurs:
+
+- New evidence materially affects an existing finding or evidence sufficiency determination.
+- Work begins to remediate a residual exception.
+- The architecture, harness, evidence model, or associated claims change.
+- A contradiction is identified in a source, result, or approved research record.
+- A production release, client outcome, or operational effectiveness claim is proposed.
 
 ---
 
