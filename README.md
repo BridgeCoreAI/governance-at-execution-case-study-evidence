@@ -596,9 +596,12 @@ Publication readiness does not require that every incident question be conclusiv
 
 ## Intellectual Property and Publication Status
 
-**Repository status:** Private research development. Public release pending evidence closure, technical review, and explicit approval by the research owner.
+**Repository status:** Public research repository. Public access to the current research artifacts is authorized as research in progress, with the documented limitations and residual exceptions retained.
 
-The repository was previously public on October 27, 2026. Its current private status does not negate prior public availability.
+**Research phase status:** Conditional administrative closure of the bounded H1 through H5 D research phase was approved on November 16, 2026. The nine residual exceptions remain open. This closure does not certify production implementation, operational effectiveness, incident prevention, or a final production validated release.
+
+The repository was public on October 27, 2026 and is currently public. Historical status statements within approved assessment artifacts preserve their original approval context. They do not govern current repository visibility or release authorization. The current status is controlled by this section and the [final administrative research closure decision](assessment/inc001-final-administrative-closure-decision.md).
+
 Governance at Execution(TM) and associated BridgeCore AI(TM) research materials
 remain under active development. All rights reserved; no license is granted
 for reuse, redistribution, modification, or derivative use. Third-party names
