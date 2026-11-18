@@ -127,7 +127,7 @@ The later interpretation must not be silently substituted for the original discl
 | Third-party production audit logs | Not available to this review |
 | Detailed original authorization records | Not available to this review |
 | Independent incident reproduction | Not performed |
-| Governance at Execution v4.0 enforcement tests | Not performed |
+| Independent frozen architecture enforcement tests in a verified deployment | Not performed |
 
 "Not available to this review" does not establish that an artifact does not exist.
 
@@ -141,7 +141,7 @@ The later interpretation must not be silently substituted for the original discl
 
 **Complete incident evidence closure:** Not achieved.
 
-**Architecture control effectiveness:** Not assessed.
+**Frozen architecture implementation effectiveness:** Insufficient evidence to determine. Formal PASS, PARTIAL, and FAIL ratings remain unassigned.
 
 The currently reviewed evidence is sufficient to establish a preliminary, source-attributed reconstruction of the reported incident.
 
