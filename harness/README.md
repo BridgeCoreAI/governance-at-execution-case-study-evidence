@@ -15,3 +15,11 @@ python harness/validate_h1.py
 **Scope:** Checks schema requirements, cross-record referential consistency, synthetic-only target suffixes, baseline permission scope, current simulated ESA, and expected DSA/ESA alignment. This is a **baseline validator**, not an execution gate, actual environmental sensor, test result for AT-001–AT-004, or comprehensive authorization engine. A final production-grade allow decision must come from a separate gate bound to the actual action and state versions.
 
 **Review note:** The exact field naming, enumerations, policy choices, and validation logic are newly introduced harness details; the frozen architecture remains unchanged. The `.test` suffix check is a guardrail for fixture data, not a complete network isolation control. All JSON files are fictional; the simulator must have no network-capable tools.
+
+## Evidence and public claim boundary
+
+The harness demonstrates selected synthetic behaviors in local test runs. It does not establish that the frozen Governance at Execution™ v4.0 architecture was deployed, that any client outcome was achieved, or that production or operational effectiveness has been demonstrated.
+
+Local test and assertion success applies only to synthetic fixtures, mock execution paths, and diagnostic expectations. It is not independent production validation, regulatory certification, or evidence that the reported historical incident would have been prevented.
+
+No production environment, authenticated telemetry, durable evidence custody, or live end to end path was inspected. Residual exception EX 08 remains open. See the [final evidence sufficiency assessment](../assessment/h5d-final-evidence-sufficiency-assessment.md) and [residual exception register](../assessment/inc001-final-administrative-closure-decision.md#5-residual-exception-register).

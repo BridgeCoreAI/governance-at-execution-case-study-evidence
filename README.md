@@ -499,6 +499,8 @@ The architecture is preserved as the original evaluation specimen. Findings disc
 
 These statuses describe the current state of the bounded research phase. They do not establish production deployment, client outcomes, operational effectiveness, incident prevention, or formal architecture effectiveness ratings.
 
+Local test and assertion success demonstrates only the recorded synthetic behavior. It is not independent production validation. No production environment or client deployment was inspected.
+
 ### Research Status Interpretation
 
 **Conceptual closure** means the research has developed a coherent analytical response to its stated problem.
