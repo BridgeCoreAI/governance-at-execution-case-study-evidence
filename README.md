@@ -8,7 +8,7 @@
 **Architecture Under Evaluation:** Governance at Execution™ v4.0  
 **Incident Context:** Anthropic's publicly disclosed 2026 cybersecurity evaluation incidents  
 **Frozen Baseline Date:** September 6, 2026  
-**Research Status:** In progress | Empirical findings pending evidence closure
+**Research Status:** Conditional administrative closure of the bounded H1 through H5 D research phase approved November 16, 2026 | Nine residual exceptions remain open
 
 ---
 
@@ -477,20 +477,27 @@ The architecture is preserved as the original evaluation specimen. Findings disc
 
 ### Current Research Status
 
-**Status as of October 27, 2026**
+**Status as of November 16, 2026**
 
-| Research Activity | Recorded Status |
+| Research Activity | Current Status |
 |---|---|
 | Governance at Execution™ v4.0 baseline | Frozen |
 | Conceptual analysis | Complete |
 | Conceptual closure | Achieved |
-| Incident reconstruction | In progress |
-| Evidence inventory | In progress |
-| Evidence Closure Audit | In progress |
-| Empirical findings | Pending evidence verification |
+| Source based incident reconstruction | Preliminary reconstruction completed and reviewed; independent forensic records not obtained |
+| Evidence inventory | Completed for the reviewed sources and research artifacts |
+| Evidence Closure Audit | Primary source verification completed; independent technical validation remains outstanding |
+| H4 incident aligned experiments | Four synthetic scenarios completed; 53 of 53 scenario assertions passed |
+| H5 B control isolation | Completed; 49 of 49 diagnostic assertions passed |
+| H5 C trust boundary diagnostics | Ten cases recorded; six expected safe outcomes, three observed weaknesses, and one replay policy question not evaluable |
+| H5 C automated testing | Combined H2, H3, and H5 C suite recorded 30 passing tests; this is not a count of ten secure H5 C safeguards |
+| H5 D evidence sufficiency assessment | Approved; AT-001 through AT-004 have insufficient evidence to determine frozen architecture implementation effectiveness |
+| Synthetic empirical findings | Established within the bounded local simulation only; operational effectiveness is not established |
+| Formal architecture effectiveness ratings | Not assigned |
+| Research phase | Conditional administrative closure approved; nine residual exceptions remain open |
 | Frozen architecture modifications | None |
 
-These statuses reflect the existing research record. They do not imply that source-level verification, incident reconstruction, or control-by-control testing has been completed.
+These statuses describe the current state of the bounded research phase. They do not establish production deployment, client outcomes, operational effectiveness, incident prevention, or formal architecture effectiveness ratings.
 
 ### Research Status Interpretation
 
@@ -504,19 +511,13 @@ It does not establish that the frozen architecture has been empirically demonstr
 
 The strength of any published conclusion must not exceed the strength of its supporting evidence.
 
-### Outstanding Evidence Activities
+### Residual Evidence Exceptions
 
-The following activities remain subject to completion and verification:
+The source inventory, preliminary incident reconstruction, architecture mapping, and evidence adjudication activities originally listed as outstanding have now been addressed within the bounded research scope. Their completion does not remove the limitations recorded in the final assessment.
 
-- Establishing a source-level inventory of the publicly disclosed incidents.
-- Reconstructing the relevant incident sequences.
-- Documenting the available authorization and environmental context.
-- Mapping incident conditions to the frozen architecture.
-- Applying defined assessment criteria to the available evidence.
-- Recording supported findings, limitations, and unresolved questions.
-- Completing the Evidence Closure Audit.
+Nine residual exceptions remain open: architecture image provenance, possible additional historical specifications, independent forensic evidence, authenticated environmental telemetry, durable evidence continuity, complete mediation and isolation, authorization replay policy, production deployment and effectiveness, and revalidation, escalation, and mitigation transitions.
 
-These are outstanding research activities, not completed investigation results.
+See the [residual exception register](assessment/inc001-final-administrative-closure-decision.md#5-residual-exception-register). None of these exceptions is closed or waived by administrative completion.
 
 ---
 
@@ -526,9 +527,9 @@ These are outstanding research activities, not completed investigation results.
 
 This repository is organized to support transparent, traceable, and evidence-based evaluation of Governance at Execution™ v4.0 against publicly disclosed agentic AI cybersecurity incidents.
 
-The README serves as the central research overview. Supporting artifacts will document source evidence, incident reconstruction, architectural evaluation, and findings as the investigation progresses.
+The README serves as the central research overview. Supporting artifacts document source evidence, incident reconstruction, architectural evaluation, experimental findings, evidence sufficiency, and administrative closure.
 
-The repository distinguishes **available research artifacts** from **planned investigation deliverables**.
+The repository distinguishes **current research artifacts** from **historical planning records** and any future post baseline initiatives.
 
 ### Existing Research Artifacts
 
@@ -537,24 +538,29 @@ The repository distinguishes **available research artifacts** from **planned inv
 | [README.md](README.md) | Research overview, methodology, conceptual findings, and research status | Available |
 | [architecture/BASELINE.md](architecture/BASELINE.md) | Frozen architecture declaration and research integrity requirements | Available |
 | [architecture/gae-v4.0-frozen-baseline.png](architecture/gae-v4.0-frozen-baseline.png) | Governance at Execution™ v4.0 frozen architecture diagram | Available |
+| [sources/evidence-register.md](sources/evidence-register.md) | Source inventory, claim verification, and evidence limitations | Available |
+| [investigation/incident-reconstruction.md](investigation/incident-reconstruction.md) | Preliminary source attributed incident reconstruction | Available |
+| [assessment/evidence-closure-audit.md](assessment/evidence-closure-audit.md) | Primary source verification and evidence closure limitations | Available |
+| [assessment/inc001-consolidated-research-report.md](assessment/inc001-consolidated-research-report.md) | Consolidated research findings and formal evidence limitations | Approved and archived |
+| [assessment/inc001-final-administrative-closure-decision.md](assessment/inc001-final-administrative-closure-decision.md) | Conditional closure decision and residual exception register | Approved |
 
 The frozen baseline was established on September 6, 2026, and must not be altered to accommodate subsequent research findings.
 
-### Planned Investigation Evidence Structure
+### Historical Planning Structure and Current Disposition
 
-The following directories and artifacts are proposed for development as the research progresses.
+The original research plan included the following artifacts. This table reconciles that plan with the current public record.
 
-| Directory | Planned Artifact | Research Purpose |
-|---|---|---|
-| `sources/` | `evidence-register.md` | Record public incident sources, provenance, supported claims, and verification status |
-| `investigation/` | `incident-reconstruction.md` | Reconstruct reported agent behavior and distinguish observed facts from inference |
-| `investigation/` | `event-and-action-timeline.md` | Document the sequence of reported events, actions, and relevant execution conditions |
-| `assessment/` | `admissibility-test-matrix.md` | Evaluate frozen architecture mechanisms against documented incident conditions |
-| `assessment/` | `evidence-closure-audit.md` | Examine the relevance, sufficiency, traceability, and limitations of supporting evidence |
-| `findings/` | `findings-register.md` | Record assessment outcomes, supporting evidence, confidence limitations, and unresolved issues |
-| `review/` | `limitations-and-disposition.md` | Document research limitations, review conclusions, and publication decisions |
+| Original Planned Artifact | Current Disposition |
+|---|---|
+| `sources/evidence-register.md` | Available |
+| `investigation/incident-reconstruction.md` | Available as a preliminary source attributed reconstruction |
+| `investigation/event-and-action-timeline.md` | No standalone file; the reported sequence is recorded in the incident reconstruction and consolidated report |
+| `assessment/admissibility-test-matrix.md` | Available; original proposed criteria retained with current phase context |
+| `assessment/evidence-closure-audit.md` | Available |
+| `findings/findings-register.md` | No standalone file; findings are recorded in the H5 D assessment and consolidated report |
+| `review/limitations-and-disposition.md` | No standalone file; limitations and dispositions are recorded in the H5 D assessment, consolidated report, and closure decision |
 
-These files are planned research deliverables. Their inclusion in this table does not establish that the corresponding investigations, assessments, or findings have been completed.
+The absence of a standalone file does not imply that the related research activity was unstarted. The current disposition column identifies where the corresponding work is recorded.
 
 ### Evidence Traceability Model
 
@@ -579,7 +585,9 @@ The following controls apply to the investigation artifacts:
 
 ### Research Completion Criteria
 
-This case study will be considered ready for final publication review when:
+The bounded H1 through H5 D phase received conditional administrative closure on November 16, 2026 following completion of the consolidated report and evidence sufficiency assessment. Public access is authorized as research in progress, and nine residual exceptions remain open. The checklist below records the criteria used for review; it is not a statement that all evidence questions were conclusively resolved.
+
+The publication review checklist was:
 
 - The defined incident scope has been documented.
 - Material incident claims have traceable sources.

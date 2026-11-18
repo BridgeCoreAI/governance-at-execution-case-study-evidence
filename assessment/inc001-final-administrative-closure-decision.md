@@ -49,7 +49,7 @@ The review confirms the contents and conclusions of approved records; it does no
 
 - **H4:** 53/53 assertions across four synthetic incident-aligned tests. Passing assertions indicate expected scenario observations, not verified deployed safeguards.
 - **H5-B:** 49/49 isolation assertions. Target-only denial and the factorial deletion-controls matrix improve causal attribution within the harness. All-disabled deletion occurred only on a disposable synthetic record.
-- **H5-C:** Six expected safe cases, three documented implementation/assurance weaknesses, one replay-policy question. The 30/30 diagnostic regression tests demonstrate correct observation including weaknesses, not ten secure safeguards.
+- **H5-C:** Six expected safe cases, three documented implementation or assurance weaknesses, one replay policy question. Across H2, H3, and H5 C, 30 diagnostic and regression tests passed, comprising 14 H2 tests, 10 H3 tests, and 6 H5 C diagnostic tests. They demonstrate correct observation including weaknesses, not ten secure safeguards.
 - **TC-008:** Authorized action occurred before evidence collection failed. Assurance continuity weakness, not an unauthorized action.
 - **TC-009:** False but internally consistent synthetic ESA was accepted; telemetry authenticity remains a weakness in the local harness.
 - **TC-010:** Privileged code changed an in-process store outside the gate. This is not evidence of a remote production exploit.

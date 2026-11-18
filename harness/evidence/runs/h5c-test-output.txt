@@ -30,6 +30,6 @@ test_replay_and_logging_gaps_visible (test_h5c_trust_boundaries.TrustBoundaryDia
 test_telemetry_and_store_gaps_visible (test_h5c_trust_boundaries.TrustBoundaryDiagnosis.test_telemetry_and_store_gaps_visible) ... ok
 
 ----------------------------------------------------------------------
-Ran 30 tests in 0.015s
+Ran 30 tests in 0.084s
 
 OK
