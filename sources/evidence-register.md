@@ -7,6 +7,8 @@
 **Register Version:** Draft v0.1  
 **Research Status:** Source identification underway; claim-to-passage verification pending
 
+**Current phase note, November 16, 2026:** Primary source verification and the evidence closure review for INC-001 were subsequently completed within the bounded H1 through H5 D research scope. The original register status and pending markers below preserve drafting history. Independent technical validation and original forensic evidence remain outside the completed review.
+
 ## 1. Purpose
 
 This register identifies and tracks publicly available sources relevant to an independent evaluation of Governance at Execution™ v4.0 against Anthropic's 2026 cybersecurity evaluation incidents.

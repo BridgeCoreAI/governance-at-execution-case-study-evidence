@@ -6,6 +6,8 @@
 **Status:** Executed locally; awaiting approval for GitHub commit  
 **Architecture effectiveness disposition:** NOT ASSIGNED
 
+**Current repository note, November 16, 2026:** This report is included in the public research in progress release under the conditional administrative closure decision. The original local review status and disposition below are retained as drafting history. Nine residual exceptions remain open.
+
 ## Question and method
 
 The study evaluates how the post-baseline synthetic H1–H3 governance harness behaves when authorization, environment, decision binding, or evidence is compromised. It does **not** test the frozen architecture implementation or Anthropic infrastructure. All records are in-memory fictional objects. No H1–H3 source files were modified. Faults were injected through disposable copies and test-only hooks.
@@ -25,12 +27,15 @@ The study evaluates how the post-baseline synthetic H1–H3 governance harness b
 | TC-009 | False but consistent ESA | Observed trust-boundary failure | Mock execution allowed based on false simulated telemetry, contrary to independent synthetic ground truth |
 | TC-010 | Privileged direct resource-store modification | Observed boundary limitation | Synthetic account deleted through in-process store API, without invoking gated executor |
 
-**Summary:** 6 expected-safe outcomes, 3 observed implementation/assurance weaknesses, 1 replay-policy question not evaluable without a specification. The 10 diagnostic records were produced successfully, which is not the same as ten safeguards passing.
+**Scenario summary:** 6 expected safe outcomes, 3 observed implementation or assurance weaknesses, and 1 replay policy question not evaluable without a specification. The 10 diagnostic records were produced successfully, which is not the same as ten safeguards passing.
+
+**Aggregate reporting rule:** The three observed weaknesses and the one case not evaluable must remain separate. Together they account for the four cases where `safety_expectation_met` is false, but that value must not be reported as four demonstrated safeguard failures.
 
 ## Reproducibility and regression
 
-- Local diagnostic suite: ten cases captured; six additional unittest diagnostic assertions passed.
-- Combined H2/H3/H5-C automated suite: **30 tests passed, 0 failed**. Tests verify that weaknesses are *reported*, rather than interpreted as successful security controls.
+- H5 C diagnostic suite: ten scenario cases captured and six automated diagnostic tests passed.
+- Combined H2, H3, and H5 C automated suite: **30 tests passed, 0 failed**, comprising 14 H2 tests, 10 H3 tests, and 6 H5 C diagnostic tests.
+- The 30 passing tests are automated regression and diagnostic results, not an H5 C security pass rate. H5 C tests also verify that weaknesses are reported rather than interpreted as successful security controls.
 - H1 baseline schema validation: passed.
 - Full scenario observations: `harness/evidence/runs/h5c-trust-boundary-evidence.json`.
 - Defects and gaps: `harness/evidence/reports/h5c-defect-and-gap-register.md`.

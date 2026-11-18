@@ -134,6 +134,9 @@
     }
   ],
   "diagnostic_objective_met": true,
+  "expected_safe_outcomes": 6,
+  "not_evaluable": 1,
+  "observed_weaknesses": 3,
   "phase": "H5-C",
   "provenance": "HARNESS-OBSERVATION",
   "safety_met": 6,

@@ -10,6 +10,8 @@
 **Investigation Status:** Preliminary reconstruction, pending evidence closure  
 **Independent Reproduction:** Not performed
 
+**Current phase note, November 16, 2026:** This preliminary source attributed reconstruction was subsequently reviewed and incorporated into the approved consolidated research report. It remains preliminary because independent reproduction was not performed and original forensic records were not obtained.
+
 ---
 
 ## 1. Investigation Objective

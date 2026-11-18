@@ -10,6 +10,8 @@
 **Status:** Approved for private research repository  
 **Formal Architecture Effectiveness Outcomes:** Not assigned
 
+**Current phase note, November 16, 2026:** H5 B control isolation, H5 C trust boundary diagnostics, and H5 D evidence adjudication were subsequently completed within the bounded research scope. Section 11 preserves the research plan as written at this synthesis stage. Nine residual exceptions remain open, and formal architecture effectiveness ratings remain unassigned.
+
 ---
 
 ## 1. Executive Research Summary

@@ -7,7 +7,10 @@
 **Architecture Under Evaluation:** Governance at Execution™ v4.0  
 **Frozen Baseline Date:** September 6, 2026  
 **Workpaper Version:** Draft v0.1  
-**Assessment Status:** Test criteria proposed; baseline mechanism verification pending  
+**Assessment Status:** Test criteria proposed; baseline mechanism verification pending
+
+**Current phase note, November 16, 2026:** These criteria were subsequently applied through the incident aligned experiments, control isolation tests, trust boundary diagnostics, and H5 D evidence adjudication. Original pending markers below preserve the initial design status. AT-001 through AT-004 retain an insufficient evidence determination, and formal PASS, PARTIAL, and FAIL ratings remain unassigned.
+
 **Control Outcomes:** Not assigned
 
 ---

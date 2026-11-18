@@ -33,3 +33,6 @@ class TrustBoundaryDiagnosis(unittest.TestCase):
         self.assertTrue(self.report['diagnostic_objective_met'])
         self.assertEqual(6,self.report['safety_met'])
         self.assertEqual(4,self.report['safety_not_met'])
+        self.assertEqual(6,self.report['expected_safe_outcomes'])
+        self.assertEqual(3,self.report['observed_weaknesses'])
+        self.assertEqual(1,self.report['not_evaluable'])

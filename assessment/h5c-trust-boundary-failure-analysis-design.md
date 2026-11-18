@@ -10,6 +10,8 @@
 **Experimental Tests:** Not yet executed  
 **Formal Architecture Effectiveness Outcomes:** Not assigned
 
+**Current phase note, November 16, 2026:** The ten H5 C diagnostic cases were subsequently executed and reviewed. Six demonstrated expected safe behavior, three exposed implementation or assurance weaknesses, and one replay policy question was not evaluable. This note supersedes only the design time statement that tests had not yet been executed. It does not assign architecture effectiveness or close any residual exception.
+
 ---
 
 ## 1. Research Objective

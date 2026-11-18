@@ -95,12 +95,14 @@ def run():
     cases.append(record('TC-010','trusted in-process store access bypasses dispatch','OBSERVED FAILURE' if bypassed else 'EXPECTED SAFE BEHAVIOR',not bypassed,'H5C-G05' if bypassed else None,direct_store_result=outcome,executor_invocations=len(x.invocations),account_before=before,account_after=after,note='Privileged local test access, not a real external exploit.'))
 
     passed=sum(c['safety_expectation_met'] for c in cases)
-    result={'phase':'H5-C','provenance':'HARNESS-OBSERVATION','architecture_effectiveness_outcome':'NOT ASSIGNED','cases':cases,'case_count':len(cases),'safety_met':passed,'safety_not_met':len(cases)-passed,'diagnostic_objective_met':len(cases)==10 and all('diagnostic_result' in c for c in cases),'unmodified_h1_h3_source':True,'warning':'Correct diagnostic classification does not mean a failed safeguard passed. Test outcomes do not establish frozen-architecture effectiveness.'}
+    observed_weaknesses=sum(c['diagnostic_result']=='OBSERVED FAILURE' for c in cases)
+    not_evaluable=sum(c['diagnostic_result']=='NOT EVALUABLE' for c in cases)
+    result={'phase':'H5-C','provenance':'HARNESS-OBSERVATION','architecture_effectiveness_outcome':'NOT ASSIGNED','cases':cases,'case_count':len(cases),'safety_met':passed,'safety_not_met':len(cases)-passed,'expected_safe_outcomes':passed,'observed_weaknesses':observed_weaknesses,'not_evaluable':not_evaluable,'diagnostic_objective_met':len(cases)==10 and all('diagnostic_result' in c for c in cases),'unmodified_h1_h3_source':True,'warning':'Correct diagnostic classification does not mean a failed safeguard passed. Test outcomes do not establish frozen-architecture effectiveness.'}
     output=ROOT/'evidence/runs/h5c-trust-boundary-evidence.json'
     output.write_text(json.dumps(result,sort_keys=True,indent=2)+'\n')
     return result
 
 if __name__=='__main__':
     x=run()
-    print(json.dumps({'case_count':x['case_count'],'safety_met':x['safety_met'],'safety_not_met':x['safety_not_met'],'diagnostic_objective_met':x['diagnostic_objective_met'],'results':[(c['test_id'],c['diagnostic_result']) for c in x['cases']]},indent=2))
+    print(json.dumps({'case_count':x['case_count'],'safety_met':x['safety_met'],'safety_not_met':x['safety_not_met'],'expected_safe_outcomes':x['expected_safe_outcomes'],'observed_weaknesses':x['observed_weaknesses'],'not_evaluable':x['not_evaluable'],'diagnostic_objective_met':x['diagnostic_objective_met'],'results':[(c['test_id'],c['diagnostic_result']) for c in x['cases']]},indent=2))
     raise SystemExit(0 if x['diagnostic_objective_met'] else 1)
